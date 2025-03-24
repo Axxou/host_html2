@@ -56,6 +56,15 @@
         text-decoration: underline;
     }
 </style>
+<script type="text/javascript">
+    window.addEventListener('message', function(event) {
+        if (event.data === '_apple_ar_quicklook_button_tapped') {
+            console.log("AR button was tapped!");
+            let redirectUrl = 'https://www.instagram.com/your_instagram_username/';
+            window.location.href = redirectUrl;
+        }
+    });
+</script>
 </head>
 
 <body style="margin: 0px; background-color: rgb(10, 31, 45); overflow: hidden;">
@@ -63,24 +72,20 @@
         <div style="margin-right: 0px; display: flex; flex-direction: column; flex: 1 1 0%;">
             <div style="font-size: 14pt; font-weight: bold;">Cette oeuvre vous plait ?</div>
             <div style="font-size: 13pt;">Decouvrez l'art xxxxxxxx !</div>
-            <div id="medium">
-                <a href="https://www.instagram.com/your_instagram_username/" target="_blank">xxxxxxx.com</a>
-            </div>
+            <div id="medium">xxxxxxx.com</div>
         </div>
 
         <div style="align-items: center; display: inline-flex; margin: 10px 0px 5px -100px;">
-            <a href="https://www.instagram.com/your_instagram_username/" target="_blank">
-                <svg width="150" height="100" viewBox="0 0 219 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_1_194)">
-                    <path d="M130.981 52.36H86.0068C83.9715 52.36 82.3136 50.7021 82.3136 48.6669V3.69316C82.3136 1.6579 83.9715 0 86.0068 0H130.981C133.016 0 134.674 1.6579 134.674 3.69316V48.6669C134.674 50.7021 133.016 52.36 130.981 52.36ZM86.0068 2.98794C85.6171 2.98794 85.3016 3.30343 85.3016 3.69316V48.6669C85.3016 49.0566 85.6171 49.3721 86.0068 49.3721H130.981C131.37 49.3721 131.686 49.0566 131.686 48.6669V3.69316C131.686 3.30343 131.37 2.98794 130.981 2.98794H86.0068Z" fill="white"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_1_194">
-                    <rect width="218.788" height="100" fill="white"/>
-                    </clipPath>
-                    </defs>
-                </svg>
-            </a>
+            <svg width="150" height="100" viewBox="0 0 219 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1_194)">
+                <path d="M130.981 52.36H86.0068C83.9715 52.36 82.3136 50.7021 82.3136 48.6669V3.69316C82.3136 1.6579 83.9715 0 86.0068 0H130.981C133.016 0 134.674 1.6579 134.674 3.69316V48.6669C134.674 50.7021 133.016 52.36 130.981 52.36ZM86.0068 2.98794C85.6171 2.98794 85.3016 3.30343 85.3016 3.69316V48.6669C85.3016 49.0566 85.6171 49.3721 86.0068 49.3721H130.981C131.37 49.3721 131.686 49.0566 131.686 48.6669V3.69316C131.686 3.30343 131.37 2.98794 130.981 2.98794H86.0068Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1_194">
+                <rect width="218.788" height="100" fill="white"/>
+                </clipPath>
+                </defs>
+            </svg>
         </div>
     </div>
 </body>
