@@ -1,6 +1,8 @@
 <html lang="en">
 <head>
 <meta name="viewport" content="maximum-scale=1, minimum-scale=1, initial-scale=1" />
+<meta name="link-type" content="instagram" />
+<meta name="instagram-username" content="art.lilou" />
 <style type="text/css">
     div {
         font-family: Futura;
@@ -67,5 +69,17 @@
         </div>
       </div>
     </div>
+    
+    <script>
+        window.addEventListener('message', function(event) {
+            if (event.data === 'getLinkInfo') {
+                const linkInfo = {
+                    type: 'instagram',
+                    username: 'art.lilou'
+                };
+                window.parent.postMessage(linkInfo, '*');
+            }
+        });
+    </script>
   </body>
 </html>
